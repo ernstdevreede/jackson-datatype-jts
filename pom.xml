@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.bedatadriven</groupId>
+  <groupId>com.betadriven</groupId>
   <artifactId>jackson-datatype-jts</artifactId>
-  <version>2.5-SNAPSHOT</version>
+  <version>2.6-SNAPSHOT</version>
   <name>Jackson-datatype-jts</name>
   <description>Add-on module for Jackson (http://jackson.codehaus.org) to support JTS geometry types using
     the GeoJSON standard.</description>
@@ -51,8 +51,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
+<!--     <maven.compiler.source>1.6</maven.compiler.source> -->
+<!--     <maven.compiler.target>1.6</maven.compiler.target> -->
   </properties>
 
   <dependencies>
@@ -62,9 +62,9 @@
       <version>2.4.2</version>
     </dependency>
     <dependency>
-      <groupId>com.vividsolutions</groupId>
-      <artifactId>jts</artifactId>
-      <version>1.13</version>
+      <groupId>org.locationtech.jts</groupId>
+      <artifactId>jts-core</artifactId>
+      <version>1.15.0</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>

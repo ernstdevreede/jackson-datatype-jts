@@ -20,7 +20,7 @@ To use the module in Maven-based projects, use following dependency:
 <dependency>
   <groupId>com.bedatadriven</groupId>
   <artifactId>jackson-datatype-jts</artifactId>
-  <version>2.2</version>
+  <version>2.6-SNAPSHOT</version>
 </dependency>    
 ```
 

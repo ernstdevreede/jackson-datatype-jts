@@ -2,8 +2,8 @@ package com.bedatadriven.jackson.datatype.jts.parsers;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.GeometryFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,7 +29,7 @@ public class GenericGeometryParser extends BaseParser implements GeometryParser<
         parsers.put(GEOMETRY_COLLECTION, new GeometryCollectionParser(geometryFactory, this));
     }
 
-    @Override
+ //   @Override
     public Geometry geometryFromJson(JsonNode node) throws JsonMappingException {
         String typeName = node.get(TYPE).asText();
         GeometryParser parser = parsers.get(typeName);
